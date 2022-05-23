@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário Latim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="w-screen h-screen">
+    <header class="bg-black p-5">
+        <h1 class="text-white font-sans font-bold text-lg">Dicionário Latim</h1>
+    </header>
+    <div class="px-5 pt-5">
+        <div class="flex flex-row">
+            <input class="p-3 border border-black border-r-transparent placeholder-black w-full focus:bg-black focus:text-white focus:placeholder-white focus:border-none focus:outline-none" type="text" placeholder="Em português: " id="word">
+            <button class="p-3 border border-black hover:bg-black hover:text-white" id="search">Pesquisar</button>
+        </div>
+    </div>
+    <div id="results">
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
